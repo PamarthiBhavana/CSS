@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 100px;
+            width: 150px;
+            position: relative;
+            background-color: aqua;
+            animation-name:ani;
+            animation-delay: 2s;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+animation-iteration-count: 4;
+/* animation-direction: alternate-reverse; */
+animation-direction: reverse;
+            }
+        @keyframes ani{
+        
+            from{
+                top:0%;
+                bottom: -100px;
+                border-radius: 200%;
+        }
+        to{
+            border-radius: 300%;
+            top: 0%;
+            bottom: -500px;
+        }}
+    </style>
+</head>
+<body>
+    
+    <h1 class="main"></h1>
+</body>
+</html>
