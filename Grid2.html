@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+.main{
+    border: 10px;
+    background-color: black;
+    display: grid;
+    height: 60vh;
+    gap: 10px;
+    grid-template-areas: 'navbar navbar navbar navbar'
+    'header image text1 text1'
+    'allimages image contactus contactus'
+    'allimages footer footer footer';
+    /* place-items: center; */
+    /* place-self: start end; */
+    /* place-content: start center; */
+
+}
+
+.navbar{
+    background-color: aqua;
+    grid-area: navbar;  
+    
+}
+.header{
+    background-color: bisque;
+    grid-area: header;
+}
+.image{
+    background-color: rgb(198, 247, 3);
+
+    grid-area:image;
+}.text1{
+    background-color: rgb(141, 208, 224);
+
+    grid-area: text1;
+}.allimages{
+    background-color: rgb(231, 28, 160);
+
+    grid-area: allimages;
+}.contactus{
+    background-color: rgb(72, 77, 232);
+
+    grid-area: contactus;
+}.footer{
+    background-color: rgb(196, 255, 203);
+
+    grid-area:footer;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="navbar">Navbar</div>
+    <div class="header"> Header</div>
+    <div class="image">Image</div>
+    <div class="text1">Text</div>
+    <div class="allimages">AllImages</div>
+    <div class="contactus">Contact Us</div>
+    <div class="footer">Footer</div>
+</div>
+</body>
+</html>
