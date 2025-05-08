@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-container{
+            display: grid;
+grid-template-columns: repeat(5,1fr);
+height: 90vh;
+gap: 10px; 
+background-color: black;
+        }
+        .a{
+            /* background-color: aqua; */
+            background: linear-gradient(135deg,#89f789,#66a6ff);
+            grid-column: 1/4;
+            grid-row: 1/3;
+            justify-content: center;
+            
+display: flex;
+        }
+        .b{
+            /* background-color: rgb(249, 139, 229); */
+            background: linear-gradient(75deg,#e565f6,#fda085);
+            grid-column: 1/6;
+            grid-row: 3;
+            justify-content: center;
+display: flex;
+        }
+        .c{
+            background: linear-gradient(105deg,#4414e5,#f512a9);
+
+            /* background-color: rgb(213, 9, 9); */
+            grid-column: 4/6;
+            grid-row: 1;
+            justify-content: center;
+display: flex;
+           
+        }        .d{
+            background: linear-gradient(125deg,#e72503,#8ec8ea);
+
+            /* background-color: rgb(187, 255, 0); */
+            grid-column: 4/6;
+            grid-row: 2;
+            justify-content: center;
+display: flex;
+            
+        }        .e{
+            /* background-color: rgb(85, 42, 241); */
+            background: linear-gradient(115deg,#3af905,#db029a);
+
+            grid-column: 1;
+            grid-row: 4;
+            justify-content: center;
+display: flex;
+        }        .f{
+            /* background-color: rgb(255, 132, 0); */
+            background: linear-gradient(95deg,#636102,#fda085);
+
+            grid-column: 2;
+            grid-row: 4;
+            justify-content: center;
+display: flex;
+        }        .g{
+            background: linear-gradient(85deg,#ce7cd9,#6836f1);
+
+            /* background-color: rgb(0, 255, 170); */
+            grid-column: 3;
+            grid-row: 4;
+            justify-content: center;
+display: flex;
+        }
+        .h{
+            /* background-color: rgb(211, 228, 123); */
+            background: linear-gradient(110deg,#028585,#6b1903);
+
+           grid-column: 4;
+            grid-row: 4;
+            justify-content: center;
+display: flex;
+        }
+        .i{
+            /* background-color: rgb(140, 219, 193); */
+            background: linear-gradient(115deg,#6e8877,#600262);
+display: flex;
+justify-content: center;
+            grid-column: 5;
+            grid-row: 4;
+        }
+        .ab{
+            background-color: #f9faf9;
+height: 50px;
+width: 50px;
+border-radius: 10px;
+text-align: center;
+align-content: center;
+align-self: center;
+transform: rotate(400deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="a">
+            <p class="ab">1</p></div>
+        <div class="b"><p class="ab">2</p></div>
+        <div class="c"><p class="ab">3</p></div>
+        <div class="d"><p class="ab">4</p></div>
+        <div class="e"><p class="ab">5</p></div>
+        <div class="f"><p class="ab">6</p></div>
+        <div class="g"><p class="ab">7</p></div>
+        <div class="h"><p class="ab">8</p></div>
+        <div class="i"><p class="ab">9</p></div>
+
+    </div>
+</body>
+</html>
